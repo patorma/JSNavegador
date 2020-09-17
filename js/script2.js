@@ -1,7 +1,6 @@
 c = console.log;
-const title = document.getElementById("title2");
-if (title) {
-    title.style.background = "yellow";
-}
+const title = document.querySelector("h1");
 
-c("Hola Mundo");
+//title.setAttribute("id", "title");
+title.id = "title";
+c(title);
