@@ -7,8 +7,23 @@
 //otra forma de convertirlo en un array es la siguiente:
 //es un prototipon el Array y dice crea un array a partir de una lista que te paso
 //como parametro
-const nodeList = Array.from(document.querySelectorAll("li"));
-nodeList.map((el) => (el.style.background = "yellow"));
+//const nodeList = Array.from(document.querySelectorAll("li"));
+//cada elemento del array estara pintado de amarillo
+//nodeList.map((el) => (el.style.background = "yellow"));
+//quitar elemento que contenga la palabra object(primera forma sin Array.from())
+/*nodeList.map((el) => {
+    if (el.textContent.trim().toUpperCase() === "OBJECT") {
+        el.remove();
+    }
+});*/
+const nodeList = document.querySelectorAll("li");
+//como es nodeList se puede recorrer con un for of
+
+for (let el of nodeList) {
+    if (el.textContent.trim().toUpperCase() === "OBJECT") {
+        el.remove();
+    }
+}
 //devuelve HTMLCOLLECTIONS
 //const elementList = document.getElementsByTagName("li");
 
