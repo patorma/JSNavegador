@@ -5,6 +5,7 @@ const profesorContainer = document.getElementById("teacher");
 
 profesor.textContent = "Patricio Contreras";
 profesor.classList.add("teacher");
+profesor.setAttribute("id", "profesor");
 // profesor.id = "teacher";
 
 //agregar nuestro elemento creado(profesor) con element.appendchild()
