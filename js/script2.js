@@ -3,4 +3,5 @@ const title = document.querySelector("h1");
 
 //title.setAttribute("id", "title");
 title.id = "title";
-c(title.classList);
+
+title.classList.add("main-title", "title-front-page");
