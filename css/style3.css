@@ -1,3 +1,10 @@
+:root {
+    --height: 20px;
+    --width: 80px;
+    --top: 370px;
+    --left: -640px;
+}
+
 body {
     margin: 0;
     display: flex;
@@ -15,4 +22,27 @@ input {
 
 [type="checkbox"] {
     display: inline-block;
+}
+
+.video {
+    width: 640px;
+    height: 360px;
+    display: block;
+    margin-bottom: 1em;
+}
+
+button {
+    position: relative;
+    top: var(--top);
+    left: var(--left);
+}
+
+.play {
+    width: var(--width);
+    height: var(--height);
+}
+
+.pause {
+    width: var(--width);
+    height: var(--height);
 }
