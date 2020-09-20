@@ -46,3 +46,13 @@ button {
     width: var(--width);
     height: var(--height);
 }
+
+div {
+    padding: 2em;
+    border: 1px solid #999;
+}
+
+.div-1 {
+    width: 600px;
+    height: 150px;
+}
