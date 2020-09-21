@@ -47,12 +47,26 @@ button {
     height: var(--height);
 }
 
-div {
+
+/* div {
     padding: 2em;
     border: 1px solid #999;
-}
+} */
 
-.div-1 {
+
+/* .div-1 {
     width: 600px;
     height: 150px;
+} */
+
+.gallery {
+    display: grid;
+    /*agrega cuadriculas con espacio en este caso de atres cuadriculas*/
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+
+.img img {
+    width: 100%;
+    display: block;
 }
