@@ -23,4 +23,7 @@ ad.classList.add("publicidad");
 // parent.insertAdjacentText("beforebegin", "Hola mundo");
 
 //insertar HTML como hermano anterior
-parent.insertAdjacentHTML("beforebegin", `<h1>Soy el titulo principal</h1>`);
+// parent.insertAdjacentHTML("beforebegin", `<h1>Soy el titulo principal</h1>`);
+
+//insertar HTML como último hijo
+parent.insertAdjacentHTML("beforeend", `<h1>Soy el titulo principal</h1>`);
